@@ -464,7 +464,32 @@ li,ul,ol{
     color: #fff;
     text-shadow: none;
 }
-
+    /*
+    -----------------customer reviews
+    */
+.review_list.bordered_bottom {
+    border-bottom: 0;
+    border-top: 0;
+}
+ .user_review{
+     margin: 28px 0;
+        
+}
+bordered_bottom{
+    border-bottom: 1px solid #dadada;
+    margin: 0;
+}
+    .user_review_header {
+    align-items: baseline;
+    justify-content: space-between;
+    display: flex;
+    margin: 28px 0 16px 0;
+}
+    .user_review_comments{  
+    margin: 8px 0 16px;
+    word-wrap: break-word;
+    line-height: 24px;
+    }
 
 
 
