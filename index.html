@@ -12,12 +12,6 @@
     <!--End of Bootsrap-->
     <!--Main style-->
     <link rel="stylesheet" href="css/main.css">
-    <!--Effects style-->
-    <link rel="stylesheet" href="css/effects.css">
-    <!--JS-->
-    <script src="js/main.js"></script>
-        <!-- Bootstrap Fremwork Main Css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
   <body>
     <div class="logo">
@@ -50,36 +44,22 @@
     </nav>
       <!--End of main menu-->
 
-<div class="slideshow">
-<div class="mySlides fade">
-  <img src="img/slider1.jpg"  style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="img/slider2.jpg"  style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="img/slider3.jpg"  style="width:100%">
-</div>
+<!--Slider area starts-->
+<div class="sliders">
+<slider>    
+  <slide><p>Slide 1</p></slide>
+  <slide><p>Slide 2</p></slide>
+  <slide><p>Slide 3</p></slide>
+  <slide><p>Slide 4</p></slide>
+    </slider>
+ </div>
 
 
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
 
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
 <!--End of Slider Area-->
       
 <!--start bestseller area-->
-      <h2 class="title__line">Best Sellers</h2>
+  <h2 class="title__line">Best Sellers</h2>
   <ul class="bestseller_container">
   <li class="bestseller_item">1</li>
   <li class="bestseller_item">2</li>
@@ -96,37 +76,6 @@
 <!--end footer area-->
       
 
-      <script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
- 
-}  
-          
-</script>
+      
   </body>
 </html>
