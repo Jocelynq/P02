@@ -39,6 +39,39 @@ ul,ol,li{
 div{
     display: block;
 }
+/*
+Flexbox
+*/
+@media (min-width: 992px)
+.col_l_4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+@media (min-width: 768px)
+.col_m_3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+@media (min-width: 576px)
+.col_s_1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -233,18 +266,15 @@ footer
    
     padding: 0px;
     margin: 0px;
-    
     width: 100%;
     height: 100px;
-    background-color:floralwhite;
+    background-color:#8FC1E3;
     color:dimgrey;
     text-align: center;
 
 }
 
 /*Product Listing*/
-*best seller section using flex box grids
-
 .bestseller_container{
     padding:100;
     margin:100;
@@ -290,6 +320,7 @@ footer
   height: 200px;
   margin: 60px;
 }
+/*
 @media(min-width:50em){
     .block {
       width:20%; 
@@ -301,7 +332,7 @@ footer
         filter: opacity(50%);
     }
     
-    
+    */
     
 
 /*about heading image*/
