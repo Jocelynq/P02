@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cresent Moon Yoga</title>
     <!--fonts used-->
     <link href="https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap" rel="stylesheet">
@@ -45,21 +46,22 @@
       <!--End of main menu-->
 
 <!--Slider area starts-->
-<div class="sliders">
-<slider>    
-  <slide><p>Slide 1</p></slide>
-  <slide><p>Slide 2</p></slide>
-  <slide><p>Slide 3</p></slide>
-  <slide><p>Slide 4</p></slide>
-    </slider>
- </div>
+<div class="slider_container">
+  <img class="mySlides" src="img/slider1.jpg" >
+  <img class="mySlides" src="img/slider2.jpg" >
+  <img class="mySlides" src="img/slider3.jpg">
+  <img class="mySlides" src="img/slider4.jpg">
 
+  <button class="arrow arrow_left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="arrow arrow_right" onclick="plusDivs(1)">&#10095;</button>
+</div>
 
 
 <!--End of Slider Area-->
       
 <!--start bestseller area-->
-  <h2 class="title__line">Best Sellers</h2>
+      <div class="title__line">
+  <h2>Best Sellers</h2>
   <ul class="bestseller_container">
   <li class="bestseller_item">1</li>
   <li class="bestseller_item">2</li>
@@ -68,6 +70,7 @@
   <li class="bestseller_item">5</li>
   <li class="bestseller_item">6</li>
 </ul>
+          </div>
 <!--end bestseller area-->
  <!--start footer area-->
 <div class="footer">
@@ -76,6 +79,24 @@
 <!--end footer area-->
       
 
-      
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>   
   </body>
 </html>
