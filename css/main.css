@@ -728,4 +728,39 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     background-color: #8FC1E3;
     
 }
+
+/*payment css*/
+.pay_row{
+    display: -ms-flexbox; 
+    -ms-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.column_50{
+    flex: 50%;
+    -ms-flex: 50%;
+    position: relative;
+}
+.column_75{
+    flex: 75%;
+    -ms-flex: 75%;
+}
+.column_25{
+    flex: 25%;
+    -ms-flex: 25%;
+}
+.column_25, .column_50, .column_75{
+    padding: 0 -16px;
+}
+.pay{
+     box-sizing: border-box;
+}
+.box {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
 >>>>>>> master
