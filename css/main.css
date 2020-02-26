@@ -637,9 +637,14 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
 }
 .cart_product_discription_heading{
     font-weight: bold;
+    text-align: left;
+    padding-left: 12px;
+   
     
 }
 .cart_product_discription{
+    text-align: left;
+    padding-left: 12px;
    
    
 }
@@ -647,6 +652,7 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     width: 200px;
     height: 200px; 
     padding: 10px;
+    margin: 30px;
 }
 .cart_discription_box{
     margin: 10px;
