@@ -39,39 +39,6 @@ ul,ol,li{
 div{
     display: block;
 }
-/*
-Flexbox
-*/
-@media (min-width: 992px)
-.col_l_4 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-@media (min-width: 768px)
-.col_m_3 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
-@media (min-width: 576px)
-.col_s_1 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -91,10 +58,12 @@ button {
     background-color:#8FC1E3;
 }
 a{
-  color:#8FC1E3;
+  color:#828282;
+    text-decoration: none;
 }
 a:hover,a:active,a:focus{
-  color:#333333;
+  color:#8FC1E3;
+    text-decoration: underline;
 }
 /*Text input field*/
 input{
@@ -136,8 +105,6 @@ p{
     font-weight: regular;
     line-height: 24pt;
     text-indent: 0;
-    
-    
 }
 /*Bulleted and ordered list*/
 li,ul,ol{
@@ -154,8 +121,10 @@ li,ul,ol{
 /*
 ----------navigation menu
 */
+
 .main_menu {
   display: flex;
+     position: sticky;
   justify-content: center;
   list-style-type: none;
     color: #666666;
@@ -166,9 +135,7 @@ li,ul,ol{
 
 =======
 
-.logo{
-    
-}
+
 .main_menu > li > a {
   color: #666666;
   display: block;
@@ -263,16 +230,26 @@ li,ul,ol{
 footer
 */
 .footer{
-   
-    padding: 0px;
+   display: block;
+    clear:both;
+    padding: 20px;
     margin: 0px;
     width: 100%;
-    height: 100px;
-    background-color:#8FC1E3;
+    height: inherit;
+    background-color:#fafafa;
     color:dimgrey;
     text-align: center;
-
 }
+.footer_block{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 
 /*Product Listing*/
 .bestseller_container{
@@ -308,6 +285,8 @@ footer
     display:flex;
     flex-wrap:wrap;
     text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .block{
