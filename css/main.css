@@ -67,10 +67,55 @@ a:hover,a:active,a:focus{
 }
 /*Text input field*/
 input{
-    width: 400px;
+    width: 40%;
     padding: 15px 22px;
     border: 2px solid #c0c0c0;
     box-sizing: border-box;
+        color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.regular-nav .menu-2 li input[type=text] {
+    padding: 6px 10px;
+    width: 40%;
+    border: none;
+    float: right;
+    font-size: 11px;
+    margin-top: 4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: table-cell;
+}
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.regular-nav .menu-2 li button {
+    margin-top: 10px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    color: #555555;
+}
+.regular-nav .menu-2 li.shopping-cart {
+    float: right;
+    margin-top: 5px;
 }
 
 /* 
@@ -121,6 +166,28 @@ li,ul,ol{
 /*
 ----------navigation menu
 */
+regular-nav{
+    padding: 18px 0;
+    background: #fff;
+}
+.regular-nav #regular-logo {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+.regular-nav .menu-2 li.search {
+    float: left;
+    width: 83%;
+    font-family: "Playfair Display";
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0;
+    margin: -5px 0 0 0;
+}
 
 .main_menu {
   display: flex;
@@ -133,7 +200,6 @@ li,ul,ol{
     color: #8FC1E3;
 }
 
-=======
 
 
 .main_menu > li > a {
@@ -281,10 +347,10 @@ footer
     background: #333333;
 }
 
+
 .container{
-    display:flex;
-    flex-wrap:wrap;
-    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -466,7 +532,7 @@ footer
 .nav {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 0;

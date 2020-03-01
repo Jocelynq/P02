@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Bolster</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cresent Moon Yoga</title>
     <!--fonts used-->
     <link href="https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap" rel="stylesheet">
     <!--Start of Bootsrap-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--use of rows-->
     
     <!--End of Bootsrap-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!--Main style-->
     <link rel="stylesheet" href="css/main.css">
-    <!--Effects style-->
-    <link rel="stylesheet" href="css/effects.css">
-        <!-- Bootstrap Fremwork Main Css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- star rating css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/grids.css">
 </head>
   <body>
     <div class="logo">
@@ -26,7 +24,13 @@
         </a>
     </div>
 <!--Navigation buttons Home, Shop,About, Contact-->
-    <nav >
+    <nav class="regular-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-2">
+					<div id="regular-logo"><a href="index.html">Cresent Yoga.</a></div>
+				</div>
+        <div class="col-md-6 col-xs-6 text-center menu-1">
         <ul class="main_menu">
             <li> <a href="index.html">Home</a></li>
                <li class="drop"><a href="shop.html">Shop</a>
@@ -36,7 +40,7 @@
                           <ul class="mega_item">
                               <li><a href="#">Mats</a></li>
                               <li><a href="#">Blocks</a></li>
-                              <li><a href="#">Bolsters</a></li>
+                              <li><a href="bolster.html">Bolsters</a></li>
                               <li><a href="#">Straps</a></li>
                               <li><a href="#">Others</a></li>
                           </ul>
@@ -46,8 +50,24 @@
               </li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            </div>
+           <div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+					<ul>
+						<li class="search">
+							<div class="input-group">
+						      <input type="text" placeholder="Search">
+						      <span class="input-group-btn">
+						        <button class="btn btn-primary" type="button"><i class="icon-search">
+                                    <i class="material-icons">search</i></i></button>
+						      </span>
+						    </div>
+						</li>
+						<li class="shopping-cart"><a href="cart.html" class="cart"><i class='fas fa-shopping-cart'></i></a></li>
+					</ul>
+				</div>
         </ul>
-    </nav>
+            </div>
+</nav>
       <!--End of main menu-->
       <!--Image description starts here-->
 <div class="image_description_container">
