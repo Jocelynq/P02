@@ -127,6 +127,7 @@ h1{
     line-height: 45pt;
     text-align: left;
     font-weight: bold;
+    
 }
 /*Heading 2*/
 h2{
@@ -172,7 +173,7 @@ regular-nav{
 }
 .regular-nav #regular-logo {
     font-size: 20px;
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
@@ -191,7 +192,7 @@ regular-nav{
 
 .main_menu {
   display: flex;
-     position: sticky;
+  position: sticky;
   justify-content: center;
   list-style-type: none;
     color: #666666;
@@ -199,8 +200,6 @@ regular-nav{
 .main_menu :hover{
     color: #8FC1E3;
 }
-
-
 
 .main_menu > li > a {
   color: #666666;
@@ -315,7 +314,14 @@ footer
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-
+.footer #regular-logo {
+    font-size: 20px;
+    margin-top: 0px;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
 
 /*Product Listing*/
 .bestseller_container{
@@ -809,3 +815,71 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
   border-radius: 3px;
 }
 >>>>>>> master
+/*header for product details*/
+#regular-header, #regular-counter, .regular-bg {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.regular-cover.regular-cover-sm {
+    height: 600px;
+}
+.regular-cover {
+    height: 400px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.regular-cover .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.fregular-cover.regular-cover-sm .display-t, .regular-cover.regular-cover-sm .display-tc {
+    height: 600px;
+    display: table;
+    width: 100%;
+}
+.regular-cover .display-t, .regular-cover .display-tc {
+    z-index: 9;
+    height: 900px;
+    display: table;
+    width: 100%;
+}
+#regular-header .display-tc h1, #regular-counter .display-tc h1, .regular-cover .display-tc h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-top: 250px;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
+}
+#regular-header .display-tc h2, #regular-counter .display-tc h2, .regular-cover .display-tc h2 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
