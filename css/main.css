@@ -255,7 +255,7 @@ regular-nav{
   transition: all 0.2s ease-in-out 0s;
   visibility: hidden;
   width: 189px;
-  z-index: 99;
+  z-index: 999;
 }
 .main_menu li.drop:hover ul.dropdown {
   opacity: 1;
@@ -611,6 +611,7 @@ bordered_bottom{
       white-space: nowrap;
       margin: 0;
       padding: 0;
+      z-index: -1;
 }
 .mySlides {
       width: 100%;
@@ -882,4 +883,64 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     padding: 0;
     color: white;
     text-align: center;
+}
+/*Section for product description image slider*/
+/*Section for product description image slider*/
+#regular-product{
+    padding: 7em 0;
+    clear: both;
+}
+* {box-sizing: border-box}
+.productSlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.productSlides-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }

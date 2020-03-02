@@ -4,7 +4,7 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cresent Moon Yoga</title>
+    <title>Bolster/Cresent Yoga</title>
     <!--fonts used-->
     <link href="https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap" rel="stylesheet">
     <!--Start of Bootsrap-->
@@ -18,11 +18,6 @@
     <link rel="stylesheet" href="css/grids.css">
 </head>
   <body>
-    <div class="logo">
-        <a href="index.html">
-            <img src="img/1.png" alt="logo">
-        </a>
-    </div>
 <!--Navigation buttons Home, Shop,About, Contact-->
     <nav class="regular-nav" role="navigation">
 		<div class="container">
@@ -86,48 +81,35 @@
 		</div>
 	</header>
         <!--header ends-->
-      <!--Image description starts here-->
-<div id="fh5co-product">
+<!--Image description starts here-->
+<div id="regular-product">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 animate-box">
-					<div class="owl-carousel owl-carousel-fullwidth product-carousel">
-						<div class="item">
-							<div class="active text-center">
-								<figure>
-									<img src="images/product-single-1.jpg" alt="user">
-								</figure>
-							</div>
-						</div>
-						<div class="item">
-							<div class="active text-center">
-								<figure>
-									<img src="images/product-single-2.jpg" alt="user">
-								</figure>
-							</div>
-						</div>
-						<div class="item">
-							<div class="active text-center">
-								<figure>
-									<img src="images/product-single-3.jpg" alt="user">
-								</figure>
-							</div>
-						</div>
-						<div class="item">
-							<div class="active text-center">
-								<figure>
-									<img src="images/product-single-4.jpg" alt="user">
-								</figure>
-							</div>
-						</div>
-						<div class="item">
-							<div class="active text-center">
-								<figure>
-									<img src="images/product-single-5.jpg" alt="user">
-								</figure>
-							</div>
-						</div>
-					</div>
+                    <div class="productSlides-container">
+
+<div class="productSlides fade">
+  <img src="img/big_img/bolster1.jpg" style="width:100%">
+
+</div>
+
+<div class="productSlides fade">
+  <img src="img_snow_wide.jpg" style="width:100%">
+
+</div>
+
+<div class="productSlides fade">
+  <img src="img_mountains_wide.jpg" style="width:100%">
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 					<div class="row animate-box">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 							<h2>Bolster</h2>
@@ -350,5 +332,33 @@
       </div>
 <!--end footer area-->
      
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
   </body>
 </html>
