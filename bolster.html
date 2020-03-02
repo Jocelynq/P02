@@ -19,32 +19,32 @@
 </head>
   <body>
 <!--Navigation buttons Home, Shop,About, Contact-->
-    <nav class="regular-nav" role="navigation">
+ <nav class="regular-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
 					<div id="regular-logo"><a href="index.html">Cresent Yoga.</a></div>
 				</div>
-        <div class="col-md-6 col-xs-6 text-center menu-1">
-        <ul class="main_menu">
-            <li> <a href="index.html">Home</a></li>
-               <li class="drop"><a href="shop.html">Shop</a>
-                  <ul class="dropdown mega_dropdown">
-                      <!-- Start Single Mega MEnu -->
-                      <li><a class="mega_title" href="shop.html">Product Types</a>
-                          <ul class="mega_item">
-                              <li><a href="#">Mats</a></li>
-                              <li><a href="#">Blocks</a></li>
-                              <li><a href="bolster.html">Bolsters</a></li>
-                              <li><a href="#">Straps</a></li>
-                              <li><a href="#">Others</a></li>
+                <div class="col-md-6 col-xs-6 text-center menu-1">
+                    <ul class="main_menu">
+                        <li class="drop"><a href="shop.html">Shop</a>
+                          <ul class="dropdown mega_dropdown">
+                              <!-- Start Single Mega MEnu -->
+                              <li><a class="mega_title" href="shop.html">Product Types</a>
+                                  <ul class="mega_item">
+                                      <li><a href="#">Mats</a></li>
+                                      <li><a href="#">Blocks</a></li>
+                                      <li><a href="bolster.html">Bolsters</a></li>
+                                      <li><a href="#">Straps</a></li>
+                                      <li><a href="#">Others</a></li>
+                                  </ul>
+                              </li>
+                              <!-- End Single Mega Menu -->
                           </ul>
-                      </li>
-                      <!-- End Single Mega Menu -->
-                  </ul>
-              </li>
+                        </li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
+            </ul>
             </div>
            <div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
 					<ul>
@@ -60,8 +60,9 @@
 						<li class="shopping-cart"><a href="cart.html" class="cart"><i class='fas fa-shopping-cart'></i></a></li>
 					</ul>
 				</div>
-        </ul>
+        
             </div>
+    </div>
 </nav>
       <!--End of main menu-->
         <!--header starts-->
@@ -89,17 +90,17 @@
                     <div class="productSlides-container">
 
 <div class="productSlides fade">
-  <img src="img/big_img/bolster1.jpg" style="width:100%">
+  <img src="img/big_img/bolster1.jpg" >
 
 </div>
 
 <div class="productSlides fade">
-  <img src="img_snow_wide.jpg" style="width:100%">
+  <img src="img/big_img/bolster2.jpg" >
 
 </div>
 
 <div class="productSlides fade">
-  <img src="img_mountains_wide.jpg" style="width:100%">
+  <img src="img/big_img/bolster3.jpg">
 
 </div>
 </div>
@@ -331,6 +332,7 @@
       </div>
       </div>
 <!--end footer area-->
+
      
         <script>
 var slideIndex = 1;
@@ -346,7 +348,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("productSlides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
@@ -360,5 +362,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-  </body>
+        </body>
 </html>

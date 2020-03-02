@@ -168,12 +168,12 @@ li,ul,ol{
 ----------navigation menu
 */
 regular-nav{
-    padding: 18px 0;
+    padding: 10px 0;
     background: #fff;
 }
 .regular-nav #regular-logo {
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
@@ -237,6 +237,15 @@ regular-nav{
 /*-----------------------------
   Dropdown Menu
 --------------------------------*/
+.mega_dropdown{
+    z-index: 199;
+}
+.mega_item{
+    z-index:199;
+}
+.drop{
+    z-index: 199;
+}
 .main_menu li.drop{
     position: relative;
 }
@@ -255,7 +264,7 @@ regular-nav{
   transition: all 0.2s ease-in-out 0s;
   visibility: hidden;
   width: 189px;
-  z-index: 999;
+  z-index: 99;
 }
 .main_menu li.drop:hover ul.dropdown {
   opacity: 1;
@@ -605,13 +614,15 @@ bordered_bottom{
 /*1.Slider
 */
     .slider_container{
-      width: 100%;
+      width: 80%;
+        height: auto;
       position: relative;
       overflow: hidden;
       white-space: nowrap;
-      margin: 0;
+      
       padding: 0;
-      z-index: -1;
+     margin-left: auto;
+        margin-right: auto;
 }
 .mySlides {
       width: 100%;
@@ -892,7 +903,9 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
 }
 * {box-sizing: border-box}
 .productSlides {
-    display: none
+    display: none;
+    justify-content: center;
+    text-align: center;
 }
 img {
     vertical-align: middle;
@@ -902,7 +915,9 @@ img {
 .productSlides-container {
   
   position: relative;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+    justify-content: center;
 }
 
 /* The dots/bullets/indicators */
