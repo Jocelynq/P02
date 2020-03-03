@@ -970,3 +970,68 @@ img {
 .btn.btn-lg {
     padding: 18px 36px !important;
 }
+/*nav tab*/
+.regular-tabs .regular-tab-nav {
+    clear: both;
+    margin: 0 0 3em 0;
+    padding: 3px;
+    float: left;
+    width: 100%;
+    background: #f2f2f2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+.regular-tabs .regular-tab-nav li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.regular-tabs .regular-tab-nav li.active a {
+    background: #fff;
+    color: #8FC1E3;
+}
+.regular-tabs .regular-tab-nav li a {
+    padding: 20px;
+    width: 100%;
+    float: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    color: #b3b3b3;
+}
+/* Style the tab content */
+.tabcontent {
+  padding: 6px 12px;
+}
+/*scroll to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #8FC1E3;
+}
+
+

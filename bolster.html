@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/grids.css">
 </head>
   <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!--Navigation buttons Home, Shop,About, Contact-->
  <nav class="regular-nav" role="navigation">
 		<div class="container">
@@ -123,18 +124,18 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
-					<div class="fh5co-tabs animate-box">
-						<ul class="fh5co-tab-nav">
-							<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i class="icon-file"></i></span><span class="hidden-xs">Product Details</span></a></li>
-							<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-star"></i></span><span class="hidden-xs">Feedback &amp; Ratings</span></a></li>
+					<div class="regular-tabs ">
+						<ul class="regular-tab-nav">
+							<li class="active" ><a class="tablinks" onclick="open(event,'details')"><span class="hidden-xs">Product Details</span></a></li>
+							<li><a class="tablinks" onclick="open(event,'reviews')"><span class="hidden-xs">Customer Reviews</span></a></li>
 						</ul>
 
 						<!-- Tabs -->
-						<div class="fh5co-tab-content-wrap">
-
-							<div class="fh5co-tab-content tab-content active" data-tab-content="1">
+					
+<div id="details" class="tabcontent">
 								<div class="col-md-10 col-md-offset-1">
 									<h2>Bolster</h2>
 									<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
@@ -151,162 +152,52 @@
 											<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
 										</div>
 									</div>
-
-								</div>
-							</div>
-
-							<div class="fh5co-tab-content tab-content" data-tab-content="2">
-								<div class="col-md-10 col-md-offset-1">
-									<h3>Product Specification</h3>
-									<ul>
-										<li>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius</li>
-										<li>adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi</li>
-										<li>Veritatis tenetur odio delectus quibusdam officiis est.</li>
-										<li>Magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</li>
-									</ul>
-									<ul>
-										<li>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius</li>
-										<li>adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi</li>
-										<li>Veritatis tenetur odio delectus quibusdam officiis est.</li>
-										<li>Magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="fh5co-tab-content tab-content" data-tab-content="3">
+                            </div>
+                        </div>
+							<div id="reviews" class="tabcontent">
 								<div class="col-md-10 col-md-offset-1">
 									<h3>Happy Buyers</h3>
 									<div class="feed">
 										<div>
 											<blockquote>
-												<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
+												<p>These coats are great for changing weather as you can layer-up and shed layers throughout the day. They are the best layering piece and can allow you to stay warm under a stylish but flimsy wool coat. I have one in small and one in medium so that I have more layering options. . . but please Uniqlo, bring back the previous quilted style! It was WAY nicer and more compact! Also, the "brown" is actually gold in real life and not at all brown - a real brown or beige option would be ideal.</p>
 											</blockquote>
 											<h3>&mdash; Louie Knight</h3>
-											<span class="rate">
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-											</span>
+											<div class="product_detail_rating">
+         <ul class="product_rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>      
+    </ul>
+         </div>
 										</div>
 										<div>
 											<blockquote>
 												<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
 											</blockquote>
 											<h3>&mdash; Joefrey Gwapo</h3>
-											<span class="rate">
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-												<i class="icon-star2"></i>
-											</span>
+											<div class="product_detail_rating">
+         <ul class="product_rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>      
+    </ul>
+         </div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-
+                        </div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+      </div>
       <!--Image description ends here-->
-      <!--Text description starts here-->
-<div class="text_description_container">
-    <div class="product_detail_tittle">
-        <h2>Comfortable Bolster</h2>
-    </div>
-     <div class="product_detail_rating">
-         <ul class="product_rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>      
-    </ul>
-         </div>
-         <div class="product_text_detail">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod temf incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostr exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-         </div>
-         <div class="product_detail_price">
-             <li class="old_price">$115</li>
-             <li>$80</li>
-         </div>
-         <div class="product_choose_color">
-             <h3 style="text-align: left">Choose Color</h3>
-             <ul class="choose_color">
-                 <span class="choose_color_dot1"></span>
-                 <span class="choose_color_dot2"></span>
-             </ul>
-         </div> 
-         <ul class="product_detail_buttons">
-             <li class="add_to_cart">
-             <a href=#>Add to Cart</a>
-             </li>
-             <li class="buy_now">
-                   <a href=#>Buy Now</a>
-             </li>
-             </ul>
-  
-      </div>
-      <!--Text description ends here-->
-      <!--start reviews area-->
-      <h1>Customer Reviews</h1>
-      <div class="user_review">
-          <div class="user_review_heading">
-          <h3>Good product!</h3>
-          </div>
-            <div class="product_detail_rating">
-         <ul class="product_rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>      
-    </ul>
-         </div>
-          <div class="user_review_comment">
-              <p>These coats are great for changing weather as you can layer-up and shed layers throughout the day. They are the best layering piece and can allow you to stay warm under a stylish but flimsy wool coat. I have one in small and one in medium so that I have more layering options. . . but please Uniqlo, bring back the previous quilted style! It was WAY nicer and more compact! Also, the "brown" is actually gold in real life and not at all brown - a real brown or beige option would be ideal.</p>
-          </div>
-      </div>
-            <div class="user_review">
-          <div class="user_review_heading">
-          <h3>Good product!</h3>
-          </div>
-            <div class="product_detail_rating">
-         <ul class="product_rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>      
-    </ul>
-         </div>
-          <div class="user_review_comment">
-              <p>These coats are great for changing weather as you can layer-up and shed layers throughout the day. They are the best layering piece and can allow you to stay warm under a stylish but flimsy wool coat. I have one in small and one in medium so that I have more layering options. . . but please Uniqlo, bring back the previous quilted style! It was WAY nicer and more compact! Also, the "brown" is actually gold in real life and not at all brown - a real brown or beige option would be ideal.</p>
-          </div>
-      </div>
-            <div class="user_review">
-          <div class="user_review_heading">
-          <h3>Good product!</h3>
-          </div>
-            <div class="product_detail_rating">
-         <ul class="product_rating">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>      
-    </ul>
-         </div>
-          <div class="user_review_comment">
-              <p>These coats are great for changing weather as you can layer-up and shed layers throughout the day. They are the best layering piece and can allow you to stay warm under a stylish but flimsy wool coat. I have one in small and one in medium so that I have more layering options. . . but please Uniqlo, bring back the previous quilted style! It was WAY nicer and more compact! Also, the "brown" is actually gold in real life and not at all brown - a real brown or beige option would be ideal.</p>
-          </div>
-      </div>
-<!--end reviews area-->
+
 <!--start footer area-->
 
 <div class="footer">
@@ -360,6 +251,24 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+    
+            
+      </script>
+      <script>
+  function open(evt, name) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 </script>
+      <script src="script/main.js"></script>
         </body>
 </html>
