@@ -959,3 +959,14 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+.regular-heading {
+    margin-bottom: 5em;
+}
+.btn-primary.btn-outline {
+    background: transparent;
+    color: #8FC1E3;
+    border: 2px solid #8FC1E3;
+}
+.btn.btn-lg {
+    padding: 18px 36px !important;
+}
