@@ -1,144 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Contact</title>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact/Cresent Yoga</title>
+    <!--fonts used-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap" rel="stylesheet">
     <!--Start of Bootsrap-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--use of rows-->
     
     <!--End of Bootsrap-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!--Main style-->
     <link rel="stylesheet" href="css/main.css">
-    <!--Effects style-->
-    <link rel="stylesheet" href="css/effects.css">
-    <!--JS-->
-    <script src="js/main.js"></script>
-        <!-- Bootstrap Fremwork Main Css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grids.css">
 </head>
     
     <body>
-        <!--Navigation buttons Home, Shop,About, Contact-->
-    <nav >
-        <ul class="main_menu">
-               <li class="drop"><a href="shop.html">Shop</a>
-                  <ul class="dropdown mega_dropdown">
-                      <!-- Start Single Mega MEnu -->
-                      <li><a class="mega_title" href="shop.html">Product Types</a>
-                          <ul class="mega_item">
-                              <li><a href="#">Mats</a></li>
-                              <li><a href="#">Blocks</a></li>
-                              <li><a href="#">Bolsters</a></li>
-                              <li><a href="#">Straps</a></li>
-                              <li><a href="#">Others</a></li>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--Navigation buttons Home, Shop,About, Contact-->
+ <nav class="regular-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-2">
+					<div id="regular-logo"><a href="index.html">Cresent Yoga.</a></div>
+				</div>
+                <div class="col-md-6 col-xs-6 text-center menu-1">
+                    <ul class="main_menu">
+                        <li class="drop"><a href="shop.html">Shop</a>
+                          <ul class="dropdown mega_dropdown">
+                              <!-- Start Single Mega MEnu -->
+                              <li><a class="mega_title" href="shop.html">Product Types</a>
+                                  <ul class="mega_item">
+                                      <li><a href="#">Mats</a></li>
+                                      <li><a href="#">Blocks</a></li>
+                                      <li><a href="bolster.html">Bolsters</a></li>
+                                      <li><a href="#">Straps</a></li>
+                                      <li><a href="#">Others</a></li>
+                                  </ul>
+                              </li>
+                              <!-- End Single Mega Menu -->
                           </ul>
-                      </li>
-                      <!-- End Single Mega Menu -->
-                  </ul>
-              </li>
+                        </li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
-                <!-- Start contact heading area -->
-        <div class="about_head_area" style="background: rgba(0, 0, 0, 0) url(img/1.png) no-repeat scroll center center / cover ;">
-            <div class="about_wrap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bradcaump__inner text-center">
-                                <h2 >Contact Us</h2>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
             </div>
-        </div>
-        <!-- End contact heading area --> 
+           <div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+					<ul>
+						<li class="search">
+							<div class="input-group">
+						      <input type="text" placeholder="Search">
+						      <span class="input-group-btn">
+						        <button class="btn btn-primary" type="button"><i class="icon-search">
+                                    <i class="material-icons">search</i></i></button>
+						      </span>
+						    </div>
+						</li>
+						<li class="shopping-cart"><a href="cart.html" class="cart"><i class='fas fa-shopping-cart'></i></a></li>
+					</ul>
+				</div>
+        
+            </div>
+    </div>
+</nav>
+<!--header starts-->
+    <header id="regular-header" class="regular-cover regular-cover-sm" role="banner" style="background-image:url(img/contact_bg.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Contact Us</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+        <!--header ends-->
         <!-- Start Contact Area -->
-        <section class="contact_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 col-sm-12">
-                        <div class="htc__contact__container">
-                            <div class="htc__contact__address">
-                                <h2 class="contact__title">contact info</h2>
-                                <div class="contact__address__inner">
-                                    <!-- Start Single Adress -->
-                                    <div class="single__contact__address">
-                                        <div class="contact__icon">
-                                            <span class="ti-location-pin"></span>
-                                        </div>
-                                        <div class="contact__details">
-                                            <p>Location : <br> 77, seventh avenue, Brat road USA.</p>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Adress -->
-                                </div>
-                                <div class="contact__address__inner">
-                                    <!-- Start Single Adress -->
-                                    <div class="single__contact__address">
-                                        <div class="contact__icon">
-                                            <span class="ti-mobile"></span>
-                                        </div>
-                                        <div class="contact__details">
-                                            <p> Phone : <br><a href="#">+00 111 222 333 44</a></p>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Adress -->
-                                    <!-- Start Single Adress -->
-                                    <div class="single__contact__address">
-                                        <div class="contact__icon">
-                                            <span class="ti-email"></span>
-                                        </div>
-                                        <div class="contact__details">
-                                            <p> Mail :<br><a href="#">yourmail@gmail.com</a></p>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Adress -->
-                                </div>
-                            </div>
-                            <div class="contact-form-wrap">
-                                <div class="contact-title">
-                                    <h2 class="contact__title">Get In Touch</h2>
-                                </div>
-                                <form id="contact-form" action="mail.php" method="post">
-                                    <div class="single-contact-form">
-                                        <div class="contact-box name">
-                                            <input type="text" name="name" placeholder="Your Nme*">
-                                            <input type="email" name="email" placeholder="Mail*">
-                                        </div>
-                                    </div>
-                                    <div class="single-contact-form">
-                                        <div class="contact-box subject">
-                                            <input type="text" name="subject" placeholder="Subject*">
-                                        </div>
-                                    </div>
-                                    <div class="single-contact-form">
-                                        <div class="contact-box message">
-                                            <textarea name="message"  placeholder="Massage*"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="contact-btn">
-                                        <button type="submit" class="fv-btn">SEND</button>
-                                    </div>
-                                </form>
-                            </div> 
-                            <div class="form-output">
-                                <p class="form-messege"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6 col-sm-12 smt-30 xmt-30">
-                        <div class="map">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166912.82476035957!2d-123.0542105583554!3d49.18134207295232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d7f2501f9c11%3A0x255becd3e98e3bd9!2slululemon!5e0!3m2!1szh-CN!2sca!4v1579118010129!5m2!1szh-CN!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>"
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Contact Area -->
+        <div id="regular-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-md-push-1">
+					
+					<div class="regular-contact-info">
+						<h3>Contact Information</h3>
+						<ul style="padding-left: 0px">
+							
+                            <li><i class="material-icons" style="color: #8FC1E3">room</i>
+                                77, seventh avenue, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brat road USA.</li>
+                            
+							<li><i class="material-icons" style="color: #8FC1E3">call</i><a href="tel://1234567987">+ 1234 5678 98</a></li>
+    
+							<li><i class="material-icons" style="color: #8FC1E3">mail</i><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<h3>Get In Touch</h3>
+					<form action="#" >
+						<div class="row form-group" style="padding-bottom: 10px">
+							<div class="col-md-6">
+								<!-- <label for="fname">First Name</label> -->
+								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+							</div>
+							<div class="col-md-6">
+								<!-- <label for="lname">Last Name</label> -->
+								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+							</div>
+						</div>
+
+						<div class="row form-group" style="padding-bottom: 10px">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input type="text" id="email" class="form-control" placeholder="Your email address">
+							</div>
+						</div>
+
+						<div class="row form-group"  style="padding-bottom: 10px">
+							<div class="col-md-12">
+								<!-- <label for="subject">Subject</label> -->
+								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+							</div>
+						</div>
+
+						<div class="row form-group" style="padding-bottom: 10px">
+							<div class="col-md-12">
+								<!-- <label for="message">Message</label> -->
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us" style="height: 100px"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+                            <button style="background-color: #828282;color: #fff;height: 50px; padding: 10px;font-size: 12pt;">Send Message</button>
+						</div>
+
+					</form>		
+				</div>
+			</div>
+			
+		</div>
+	</div>
+         <!-- End Contact Area -->
         <!--start footer area-->
 
 <div class="footer">
@@ -163,5 +171,6 @@
       </div>
       </div>
 <!--end footer area-->
+        <script src="script/main.js"></script>
     </body>
 </html>

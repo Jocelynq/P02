@@ -1,61 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>About</title>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About/Cresent Yoga</title>
+    <!--fonts used-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Quicksand&display=swap" rel="stylesheet">
     <!--Start of Bootsrap-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--use of rows-->
     
     <!--End of Bootsrap-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!--Main style-->
     <link rel="stylesheet" href="css/main.css">
-    <!--Effects style-->
-    <link rel="stylesheet" href="css/effects.css">
-    <!--JS-->
-    <script src="js/main.js"></script>
-        <!-- Bootstrap Fremwork Main Css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/grids.css">
 </head>
     
     <body>
-        <!--Navigation buttons Home, Shop,About, Contact-->
-    <nav >
-        <ul class="main_menu">
-               <li class="drop"><a href="shop.html">Shop</a>
-                  <ul class="dropdown mega_dropdown">
-                      <!-- Start Single Mega MEnu -->
-                      <li><a class="mega_title" href="shop.html">Product Types</a>
-                          <ul class="mega_item">
-                              <li><a href="#">Mats</a></li>
-                              <li><a href="#">Blocks</a></li>
-                              <li><a href="#">Bolsters</a></li>
-                              <li><a href="#">Straps</a></li>
-                              <li><a href="#">Others</a></li>
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--Navigation buttons Home, Shop,About, Contact-->
+ <nav class="regular-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-xs-2">
+					<div id="regular-logo"><a href="index.html">Cresent Yoga.</a></div>
+				</div>
+                <div class="col-md-6 col-xs-6 text-center menu-1">
+                    <ul class="main_menu">
+                        <li class="drop"><a href="shop.html">Shop</a>
+                          <ul class="dropdown mega_dropdown">
+                              <!-- Start Single Mega MEnu -->
+                              <li><a class="mega_title" href="shop.html">Product Types</a>
+                                  <ul class="mega_item">
+                                      <li><a href="#">Mats</a></li>
+                                      <li><a href="#">Blocks</a></li>
+                                      <li><a href="bolster.html">Bolsters</a></li>
+                                      <li><a href="#">Straps</a></li>
+                                      <li><a href="#">Others</a></li>
+                                  </ul>
+                              </li>
+                              <!-- End Single Mega Menu -->
                           </ul>
-                      </li>
-                      <!-- End Single Mega MEnu -->
-                  </ul>
-              </li>
+                        </li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
-        <!-- Start About heading area -->
-        <div class="about_head_area" style="background: rgba(0, 0, 0, 0) url(img/1.png) no-repeat scroll center center / cover ;">
-            <div class="about_wrap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bradcaump__inner text-center">
-                                <h2 >About Us</h2>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
             </div>
-        </div>
-        <!-- End About heading area --> 
+           <div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+					<ul>
+						<li class="search">
+							<div class="input-group">
+						      <input type="text" placeholder="Search">
+						      <span class="input-group-btn">
+						        <button class="btn btn-primary" type="button"><i class="icon-search">
+                                    <i class="material-icons">search</i></i></button>
+						      </span>
+						    </div>
+						</li>
+						<li class="shopping-cart"><a href="cart.html" class="cart"><i class='fas fa-shopping-cart'></i></a></li>
+					</ul>
+				</div>
+        
+            </div>
+    </div>
+</nav>
+      <!--End of main menu-->
+<!--header starts-->
+    <header id="regular-header" class="regular-cover regular-cover-sm" role="banner" style="background-image:url(img/about_bg.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>About Us</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+        <!--header ends-->
            <!-- Start Our Store Area -->
         <section class="htc__store__area ptb--120 bg__white">
             <div class="container">
@@ -116,5 +143,6 @@
       </div>
       </div>
 <!--end footer area-->
+        <script src="script/main.js"></script>
     </body>
 </html>
