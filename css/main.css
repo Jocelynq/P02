@@ -800,7 +800,7 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     -ms-flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
    
     
 }
@@ -816,6 +816,7 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
 .column_50>input {
     width: 100%;
     font-size: 14px;
+    border-radius: 4px;
    
 }
 .column_50>p{
@@ -839,7 +840,7 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     font-family: 'Poppins', sans-serif;
 }
 .pay{
-     box-sizing: border-box;
+    box-sizing: border-box;
     width: 80%;
     margin: auto;
    
