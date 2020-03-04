@@ -382,6 +382,11 @@ footer
   height: 200px;
   margin: 60px;
 }
+
+.title_line{
+    width: 80%;
+    margin: auto;
+}
 /*
 @media(min-width:50em){
     .block {
@@ -817,10 +822,12 @@ bordered_bottom{
 .column_75{
     flex: 75%;
     -ms-flex: 75%;
+    padding-bottom: 30px;
 }
 .column_25{
     flex: 25%;
     -ms-flex: 25%;
+    padding-bottom: 30px;
 }
 .column_25, .column_50, .column_75{
     padding-left: 5px;
