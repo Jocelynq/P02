@@ -800,6 +800,7 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     -ms-flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
+     font-family: 'Poppins', sans-serif;
    
     
 }
@@ -809,12 +810,20 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     -ms-flex: 50%;
     display:inline-block;
     width: 100%;
+    padding-right: 5px;
     
 }
 .column_50>input {
     width: 100%;
     font-size: 14px;
    
+}
+.column_50>p{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+}
+.p>a{
+    font-family: 'Poppins', sans-serif;
 }
 .column_75{
     flex: 75%;
@@ -827,17 +836,39 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
 .column_25, .column_50, .column_75{
     padding-left: 5px;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 .pay{
      box-sizing: border-box;
     width: 80%;
     margin: auto;
+   
 }
 .box {
   background-color: #f2f2f2;
   padding: 0px 5px 10px 10px;
   border: 1px solid lightgrey;
   border-radius: 3px;
+} 
+.pay_button{
+    background-color: #666666;
+    color:white;
+    width: 100%;
+}
+.pay_button:hover{
+    background-color: #8FC1E3;
+}
+
+@media (max-width: 800px) {
+    .pay_row {
+        flex-direction: column;
+    }
+    .col-25 {
+        padding-bottom: 20px;
+    }
+    .box{
+        padding: 10px 5px 10px 10px;
+    }
 }
 >>>>>>> master
 /*header for product details*/
@@ -868,6 +899,8 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     right: 0;
     background: rgba(0, 0, 0, 0.2);
 }
+
+
 .fregular-cover.regular-cover-sm .display-t, .regular-cover.regular-cover-sm .display-tc {
     height: 600px;
     display: table;
