@@ -382,6 +382,11 @@ footer
   height: 200px;
   margin: 60px;
 }
+
+.title_line{
+    width: 80%;
+    margin: auto;
+}
 /*
 @media(min-width:50em){
     .block {
@@ -703,23 +708,86 @@ bordered_bottom{
 }
 .order_review{
     text-align: center;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     
 }
 .checkout_box{
     color: white;
     background-color: #555555;
-    width: 50%;
-    display: inline-table
-    border: none;
-    height: 30px;
-    cursor: pointer;
-    text-decoration: none;
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    
 }
 .checkout_box:hover{
     background-color: #8FC1E3;
+}
+.divider{
+    width: 60%;
+    border-top: 1px solid black;
+    margin: auto;
+}
+
+.cart{
+    display: -ms-flexbox; 
+    -ms-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px;
     
 }
+.column_20{
+    flex: 20%;
+    -ms-flex: 20%;
+    width: 100%;
+    margin-top: 0px;
+}
+.column_80{
+    flex: 80%;
+    -ms-flex: 80%;
+    width: 100%;
+    margin-top: 0px;
+    display: flex;
+    
+}
+.column_50>p{
+    font-family: 'Poppins', sans-serif;  
+    font-size: 14px;
+}
+.column_50>h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.column_20>p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.column_30{
+    flex: 30%;
+    -ms-flex: 30%;
+    width: 100%;
+    margin-top: 0px;
+    
+}
+
+.column_40{
+    flex: 40%;
+    -ms-flex: 40%;
+    width: 100%;
+    margin-top: 0px;
+    
+}
+.column_60{
+    flex: 60%;
+    -ms-flex: 60%;
+    width: 100%;
+    margin-top: 0px;   
+}
+
 
 /*payment css*/
 .pay_row{
@@ -727,9 +795,7 @@ bordered_bottom{
     -ms-flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
-     font-family: 'Poppins', sans-serif;
-   
-    
+    font-family: 'Poppins', sans-serif;  
 }
 
 .column_50{
@@ -743,6 +809,7 @@ bordered_bottom{
 .column_50>input {
     width: 100%;
     font-size: 14px;
+    border-radius: 4px;
    
 }
 .column_50>p{
@@ -755,10 +822,12 @@ bordered_bottom{
 .column_75{
     flex: 75%;
     -ms-flex: 75%;
+    padding-bottom: 30px;
 }
 .column_25{
     flex: 25%;
     -ms-flex: 25%;
+    padding-bottom: 30px;
 }
 .column_25, .column_50, .column_75{
     padding-left: 5px;
@@ -766,7 +835,7 @@ bordered_bottom{
     font-family: 'Poppins', sans-serif;
 }
 .pay{
-     box-sizing: border-box;
+    box-sizing: border-box;
     width: 80%;
     margin: auto;
    
