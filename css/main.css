@@ -885,6 +885,7 @@ bordered_bottom{
     position: relative;
     float: left;
     width: 100%;
+    z-index: -1;
 }
 .regular-cover .overlay {
     z-index: 0;
