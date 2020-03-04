@@ -1042,7 +1042,7 @@ img {
 }
 
 /*contact page*/
-#regular-services, #regular-started, #regular-testimonial, #regular-started, #regular-product, #fh5co-about, #regular-contact, #regular-footer {
+#regular-services, #regular-started, #regular-testimonial, #regular-started, #regular-product, #regular-about, #regular-contact, #regular-footer {
     padding: 7em 0;
     clear: both;
 }
@@ -1098,4 +1098,10 @@ button, input, optgroup, select, textarea {
 }
 .form-group{
     padding= 10px;
+}
+/*for about page*/
+about_img_container{
+    margin: 30px;
+    padding: 10px;
+    display: block;
 }
