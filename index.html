@@ -69,33 +69,91 @@
       <!--End of main menu-->
 
 <!--Slider area starts-->
-<div class="slider_container">
+      <div class="col-md-12 col-md-offset-0 ">
+                    <div class="productSlides-container">
 
-  <img class="mySlides" src="img/slider1.jpg">
-  <img class="mySlides" src="img/slider2.jpg" >
-  <img class="mySlides" src="img/slider3.jpg">
-  <img class="mySlides" src="img/slider4.jpg">
+<div class="productSlides fade" style="display: block;">
+  <img src="img/slider1.jpg" style="width: 90%">
 
-  <button class="arrow arrow_left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="arrow arrow_right" onclick="plusDivs(1)">&#10095;</button>
 </div>
 
+<div class="productSlides fade" style="display: none;">
+  <img src="img/slider2.jpg" style="width: 90%">
+
+</div>
+
+<div class="productSlides fade" style="display: none;">
+  <img src="img/slider3.jpg" style="width: 90%">
+
+</div>
+<div class="productSlides fade" style="display: none;">
+  <img style="width: 90%" src="img/slider4.jpg">
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot active" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+				</div>
 
 <!--End of Slider Area-->
       
-<!--start bestseller area-->
-      <div class="title__line">
-  <h2>Best Sellers</h2>
-  <ul class="bestseller_container">
-  <li class="bestseller_item ">1</li>
-  <li class="bestseller_item">2</li>
-  <li class="bestseller_item ">3</li>
-  <li class="bestseller_item ">4</li>
-  <li class="bestseller_item ">5</li>
-  <li class="bestseller_item ">6</li>
-</ul>
-          </div>
-<!--end bestseller area-->
+<!--start new area-->
+      <!--all products area-->
+      <div id="regular-product">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center regular-heading">
+					<h2>New Products</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<div class="product">
+                        <a href="bolster.html">
+						<div class="product-grid" style="background-image:url(img/big_img/bolster1.jpg);">
+                            </div></a>
+						<div>
+							<h3 style="text-align: center"><a href="bolster.html">Bolster</a></h3>
+							<span>$95</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="product">
+                        <a href="strap.html">
+						<div class="product-grid" style="background-image:url(img/big_img/strap1.jpg);">
+							
+						</div>
+                        </a>
+						<div >
+							<h3 style="text-align: center"><a href="strap.html">Strap</a></h3>
+							<span >$60</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center">
+					<div class="product">
+                        <a href="block.html">
+						<div class="product-grid" style="background-image:url(img/big_img/block1.jpg);">
+							
+                            </div></a>
+						<div>
+							<h3 style="text-align: center"><a href="block.html">Block</a></h3>
+							<span>$90</span>
+						</div>
+					</div>
+				</div>
+			</div>
+           </div>
+	</div>
+      <!--all products ends-->
  <!--start footer area-->
 
 <div class="footer">
@@ -120,27 +178,6 @@
       </div>
       </div>
 <!--end footer area-->
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-    
-   
-</script> 
 <script src="script/main.js"></script>
   </body>
 </html>
