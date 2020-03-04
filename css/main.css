@@ -800,6 +800,7 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
     -ms-flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
+   
     
 }
 
@@ -812,6 +813,8 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
 }
 .column_50>input {
     width: 100%;
+    font-size: 14px;
+   
 }
 .column_75{
     flex: 75%;
@@ -823,13 +826,16 @@ learned from W3School: https://www.w3schools.com/howto/tryit.asp?filename=tryhow
 }
 .column_25, .column_50, .column_75{
     padding-left: 5px;
+    width: 100%;
 }
 .pay{
      box-sizing: border-box;
+    width: 80%;
+    margin: auto;
 }
 .box {
   background-color: #f2f2f2;
-  padding: 5px 5px 5px 10px;
+  padding: 0px 5px 10px 10px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
